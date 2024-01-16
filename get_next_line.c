@@ -107,21 +107,21 @@ char	*get_next_line(int fd)
 	return (lines);
 }
 
-// #include <stdio.h>
-// int main()
+// int	main(void)
 // {
-// 	int o = open("test.txt", O_RDONLY);
+// 	char	*lines;
+// 	int		o;
+// 	int		x;
+
+// 	o = open("test.txt", O_RDONLY);
 // 	if (o < 0)
 // 		return (-1);
-// 	char *lines;
-// 	int x = 0;
-// 	while (x < 10)
+// 	x = 0;
+// 	while ((lines = get_next_line(o)) != NULL)
 // 	{
-// 		lines = get_next_line(o);
 // 		printf("%d -> %s", x++, lines);
 // 		free(lines);
 // 	}
 // 	close(o);
-// 	system("leaks a.out");
-// 	return 0;
+// 	return (0);
 // }
