@@ -28,4 +28,4 @@ char	*ft_lines(char *read_lines);
 char	*ft_new_lines(char *read_lines);
 char	*get_next_line(int fd);
 
-#endif /* GET_NEXT_LINE_H */
+#endif
